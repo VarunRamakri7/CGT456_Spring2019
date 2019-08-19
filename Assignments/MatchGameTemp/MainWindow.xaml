@@ -1,0 +1,89 @@
+﻿ <Window x:Class="MatchGameTemp.Memory"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+Title="MainWindow" Height="650" Width="900" Icon="W:\Spring 2019\CGT 456\Assignments\MatchGameTemp\MatchGameTemp\bin\Debug\images\cardBack.ico">
+    <Grid>
+        <!-- Background Image -->
+        <Image HorizontalAlignment="left" Margin="0,0,0,0" VerticalAlignment="Top" Width="900" Height="650" Stretch="Fill" Source="W:\Spring 2019\CGT 456\Assignments\MatchGameTemp\MatchGameTemp\bin\Debug\images\background.jpg"/>
+        <!-- Title at top-->
+        <Label x:Name="lblTitle" Height="80" Width="505" FontSize="60" FontFamily="Lucida Handwriting" TabIndex="0" Foreground="Firebrick" Background="Transparent" Margin="196,9,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Memory Match" />
+        <!-- Congrats Label and Play Again Button -->
+        <Label x:Name="lblCongrats" Height="63" Width="306" FontSize="40" FontFamily="Microsoft Sans Serif" TabIndex="13" Foreground="Firebrick" Background="Transparent" Margin="293, 212,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Content="Congratulations!" />
+        <Button x:Name="btnPlayAgain" Height="40" Width="140" TabIndex="14" Click="btnPlayAgain_Click" Margin="374,0,0,248" HorizontalAlignment="Left" VerticalAlignment="Bottom" Content="Play Again" />
+        <!-- END Congrats Label and Play Again Button -->
+        <!-- BEGIN 12 Image controls, each surrounded by a Border control-->
+        <Border x:Name="pbBorder1" BorderBrush="Black" HorizontalAlignment="Left" Margin="127, 108,0,0" Width="100" Height="100" VerticalAlignment="Top" BorderThickness="1" Background="Transparent">
+            <Image Height="100" HorizontalAlignment="Left" x:Name="pictureBox1" Stretch="Fill" VerticalAlignment="Top" Width="100" Source="W:\Spring 2019\CGT 456\Assignments\MatchGameTemp\MatchGameTemp\bin\Debug\images\cardBack.jpg" MouseDown="PictureBox_click" />
+        </Border>
+        <Border x:Name="pbBorder2" BorderBrush="Black" HorizontalAlignment="Left" Margin="304,108,0,0" Width="100" Height="100" VerticalAlignment="Top" BorderThickness="1" Background="Transparent">
+            <Image Height="100" HorizontalAlignment="left" x:Name="pictureBox2" Stretch="Fill" VerticalAlignment="Top" Width="100" Source="/W:\Spring 2019\CGT 456\Assignments\MatchGameTemp\MatchGameTemp\bin\Debug\images\cardBack.jpg" MouseDown="PictureBox Click" />
+        </Border>
+        <Border x:Name="pbBorder3" BorderBrush="Black" HorizontalAlignment="left" Margin="487,108,0,0" Width="100" Height="100" VerticalAlignment="Top" BorderThickness="1" Background="Transparent">
+            <Image Height="100" HorizontalAlignment="Left" x:Name="pictureBox3" Stretch="Fill" VerticalAlignment="Top" Width="100" Source="W:\Spring 2019\CGT 456\Assignments\MatchGameTemp\MatchGameTemp\bin\Debug\images\cardBack.jpg" MouseDown="PictureBox_Click" />
+        </Border>
+        <Border x:Name="pbBorder4" BorderBrush="Black" HorizontalAlignment="Left" Margin="674,108,0,0" Width="100" Height="100" VerticalAlignment="Top" BorderThickness="1" Background="Transparent">
+            <Image Height="100" HorizontalAlignment="Left" x:Name="pictureBox4" Stretch="Fill" VerticalAlignment="Top" Width="100" Source="W:\Spring 2019\CGT 456\Assignments\MatchGameTemp\MatchGameTemp\bin\Debug\images\cardBack.jpg" MouseDown="PictureBox_click" />
+        </Border>
+        <Border x:Name="pbBorder5" BorderBrush="Black" HorizontalAlignment="Left" Margin="127,268,0,0" Width="100" Height="100" VerticalAlignment="Top" BorderThickness="1" Background="Transparent">
+            <Image Height="100" HorizontalAlignment="Left" x:Name="pictureBox5" Stretch="Fill" VerticalAlignment="Top" Width="100" Source="W:\Spring 2019\CGT 456\Assignments\MatchGameTemp\MatchGameTemp\bin\Debug\images\cardBack.jpg" MouseDown="PictureBox_Click" />
+        </Border>
+        <Border x:Name="pbBorder6" BorderBrush="Black" HorizontalAlignment="Left" Margin="304, 268,0,0" Width="100" Height="100" VerticalAlignment="Top" BorderThickness="1" Background="Transparent">
+            <Image Height="100" HorizontalAlignment="Left" x:Name="pictureBox6" Stretch="Fill" VerticalAlignment="Top" Width="100" Source="W:\Spring 2019\CGT 456\Assignments\MatchGameTemp\MatchGameTemp\bin\Debug\images\cardBack.jpg" MouseDown="PictureBox Click" />
+        </Border>
+        <Border x:Name="pbBorder7" BorderBrush="Black" HorizontalAlignment="Left" Margin="487, 268,0,0" Width="100" Height="100" VerticalAlignment="Top" BorderThickness="1" Background="Transparent">
+            <Image Height="100" HorizontalAlignment="Left" x:Name="pictureBox7" Stretch="Fill" VerticalAlignment="Top" Width="100" Source="W:\Spring 2019\CGT 456\Assignments\MatchGameTemp\MatchGameTemp\bin\Debug\images\cardBack.jpg" MouseDown="PictureBox_Click" />
+        </Border>
+        <Border x:Name="pbBorder8" BorderBrush="Black" HorizontalAlignment="Left" Margin="674,268,0,0" Width="100" Height="100" VerticalAlignment="Top" BorderThickness="1" Background="Transparent">
+            <Image Height="100" HorizontalAlignment="Left" x:Name="pictureBox8" Stretch="Fill" VerticalAlignment="Top" Width="100" Source="W:\Spring 2019\CGT 456\Assignments\MatchGameTemp\MatchGameTemp\bin\Debug\images\cardBack.jpg" MouseDown="PictureBox_Click" />
+        </Border>
+        <Border x:Name="pbBorder9" BorderBrush="Black" HorizontalAlignment="Left" Margin="127,439,0,0" Width="100" Height="100" VerticalAlignment="Top" BorderThickness="1" Background="Transparent">
+            <Image Height="100" HorizontalAlignment="Left" x:Name="pictureBox9" Stretch="Fill" VerticalAlignment="Top" Width="100" Source="W:\Spring 2019\CGT 456\Assignments\MatchGameTemp\MatchGameTemp\bin\Debug\images\cardBack.jpg" MouseDown="PictureBox_Click" />
+        </Border>
+        <Border x:Name="pbBorder10" BorderBrush="Black" HorizontalAlignment="Left" Margin="304,439,0,0" Width="100" Height="100" VerticalAlignment="Top" BorderThickness="1" Background="Transparent">
+            <Image Height="100" HorizontalAlignment="Left" x:Name="pictureBox10" Stretch="Fill" VerticalAlignment="Top" Width="100" Source="W:\Spring 2019\CGT 456\Assignments\MatchGameTemp\MatchGameTemp\bin\Debug\images\cardBack.jpg" MouseDown="PictureBox_Click" />
+        </Border>
+        <Border x:Name="pbBorder11" BorderBrush="Black" HorizontalAlignment="Left" Margin="487,439,0,0" Width="100" Height="100" VerticalAlignment="Top" BorderThickness="1" Background="transparent">
+            <Image Height="100" HorizontalAlignment="Left" x:Name="pictureBox11" Stretch="Fill" VerticalAlignment="Top" Width="100" Source="W:\Spring 2019\CGT 456\Assignments\MatchGameTemp\MatchGameTemp\bin\Debug\images\cardBack.jpg" MouseDown="PictureBox_Click" />
+        </Border>
+        <Border x:Name="pbBorder12" BorderBrush="Black" HorizontalAlignment="Left" Margin="674,439,0,0" Width="100" Height="100" VerticalAlignment="Top" BorderThickness="1" Background="Transparent">
+            <Image Height="100" HorizontalAlignment="Left" x:Name="pictureBox12" Stretch="Fill" VerticalAlignment="Top" Width="100" Source="W:\Spring 2019\CGT 456\Assignments\MatchGameTemp\MatchGameTemp\bin\Debug\images\cardBack.jpg" MouseDown="PictureBox_Click" />
+        </Border>
+        <!-- END 12 Image controls, each surrounded by a Border control-->
+        <!-- Credits in lower right -->
+        <Label HorizontalAlignment="Right" Margin="0,0,5,42" VerticalAlignment="Bottom" Content="Created by:" FontStyle="italic" />
+        <Label HorizontalAlignment="Right" Margin="0,0,4,31" VerticalAlignment="Bottom" Content="Ronald J. Glotzbach" Height="23.277"/>
+        <Label HorizontalAlignment="Right" Margin="0,0,5,15" VerticalAlignment="Bottom" FontStyle="italic" Content="also known in coffee houses as Sir Gerald" />
+        <Label HorizontalAlignment="Right" Margin="0,0,4,1" VerticalAlignment="Bottom" Content="Computer Graphics Technology (CGT)" />
+        <!-- END Credits in lower right -->
+        <!-- Matches displayed in upper right -->
+        <Image Height="30" Width="25" HorizontalAlignment="Left" x:Name="pbMatch1" Margin="700,30,0,0" Stretch="Fill" VerticalAlignment="Top" Source="W:\Spring 2019\CGT 456\Assignments\MatchGameTemp\MatchGameTemp\bin\Debug\images\cardPair.jpg" />
+        <Image Height="30" Width="25" HorizontalAlignment="Left" x:Name="pbMatch2" Margin="730,30,0,0" Stretch="Fill" VerticalAlignment="Top" Source="W:\Spring 2019\CGT 456\Assignments\MatchGameTemp\MatchGameTemp\bin\Debug\images\cardPair.jpg" />
+        <Image Height="30" Width="25" HorizontalAlignment="Left" x:Name="pbMatch3" Margin="760,30,0,0" Stretch="Fill" VerticalAlignment="Top" Source="W:\Spring 2019\CGT 456\Assignments\MatchGameTemp\MatchGameTemp\bin\Debug\images\cardPair.jpg" />
+        <Image Height="30" Width="25" HorizontalAlignment="Left" x:Name="pbMatch4" Margin="790,30,0,0" Stretch="Fill" VerticalAlignment="Top" Source="W:\Spring 2019\CGT 456\Assignments\MatchGameTemp\MatchGameTemp\bin\Debug\images\cardPair.jpg" />
+        <Image Height="30" Width="25" HorizontalAlignment="Left" x:Name="pbMatch5" Margin="820,30,0,0" Stretch="Fill" VerticalAlignment="Top"  Source="W:\Spring 2019\CGT 456\Assignments\MatchGameTemp\MatchGameTemp\bin\Debug\images\cardPair.jpg" />
+        <Image Height="30" Width="25" HorizontalAlignment="Left" x:Name="pbMatch6" Margin="850,30,0,0" Stretch="Fill" VerticalAlignment="Top" Source="W:\Spring 2019\CGT 456\Assignments\MatchGameTemp\MatchGameTemp\bin\Debug\images\cardPair.jpg" />
+        <!-- END Matches displayed in upper right -->
+        <!-- Wrong Attempts in upper left -->
+        <Label HorizontalAlignment="Left" Margin="50,30,0,0" VerticalAlignment="Top" Content="Wrong Attempts: " FontStyle="italic" />
+        <Label HorizontalAlignment="Left" Margin="145, 30,0,0" VerticalAlignment="Top" Content="x" FontStyle="italic" x:Name="lblMistakes" />
+        <!-- END Wrong Attempts in upper left -->
+    </Grid>
+</Window>
+
+<!--<Window x:Class="MatchGameTemp.Memory"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MatchGameTemp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="900" Icon="/MatchGameTemp;component/images/cardBack.ico">
+    <Grid>
+        background image
+        <Image HorizontalAlignment="Left" Margin="0,0,0,0" VerticalAlignment="Top" Width="900" Stretch="Fill" Source="/MatchGameTemp;component/images/background.jpg"></Image>
+        
+        title at the top 
+        <Label Name="lbTitle" Height="60" FontSize="60" FontFamily="Lucida Wandertig" TabIndex="0" Foreground="Firebrick" Background="Transparent" Margin="196,9,0,0"
+               HorizontalAlignment="Left" VerticalAlignment="top" Content="Memory Match"></Label>
+    </Grid>
+</Window>
+-->
